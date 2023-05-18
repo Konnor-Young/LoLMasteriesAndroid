@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Recherche Ligue</string>
+    <string name="input_summoner">Entrez un Invocateur</string>
+    <string name="add_summoner">Obtenir Maîtrise de l\'Invocateur</string>
+    <string name="friend_foe">Mon Équipe</string>
+    <string name="see_map">Voir la Carte</string>
+    <string name="rift_map">Faille de l\'Invocateur</string>
+    <string name="clear">Effacer Dessin</string>
+</resources>

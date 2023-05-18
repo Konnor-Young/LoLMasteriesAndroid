@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.LeagueLookup" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/background_blue</item>
+        <item name="colorPrimaryVariant">@color/gradient_blue_2</item>
+        <item name="colorOnPrimary">@color/text_gray</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/gradient_blue_1</item>
+        <item name="colorSecondaryVariant">@color/blue_glow</item>
+        <item name="colorOnSecondary">@color/accent_metal</item>
+        <!-- Status bar color. -->
+<!--        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>-->
+        <!-- Customize your theme here. -->
+    </style>
+</resources>

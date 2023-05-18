@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">League Lookup</string>
+    <string name="input_summoner">Enter a Summoner</string>
+    <string name="add_summoner">Get Summoner Mastery</string>
+    <string name="friend_foe">My Team</string>
+    <string name="see_map">See Map</string>
+    <string name="rift_map">Summoner\'s Rift</string>
+    <string name="clear">Clear Drawing</string>
+    <string-array name="regions_array">
+        <item>NA1</item>
+        <item>EUW1</item>
+        <item>EUN1</item>
+        <item>KR</item>
+        <item>OC1</item>
+        <item>JP1</item>
+        <item>LA1</item>
+        <item>LA2</item>
+        <item>BR1</item>
+    </string-array>
+</resources>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_blue">
+
+    <Spinner
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:id="@+id/region_spinner"
+        android:background="@color/accent_metal"
+        app:layout_constraintEnd_toStartOf="@+id/add_summoner_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:entries="@array/regions_array"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/add_summoner_name"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:text="@string/input_summoner"
+        android:textColor="@color/text_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/add_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/button_border"
+        android:padding="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_summoner_name">
+
+        <Button
+            android:id="@+id/add_summoner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:backgroundTint="@color/button_gray"
+            android:text="@string/add_summoner"
+            android:textColor="@color/button_text" />
+    </LinearLayout>
+
+    <RadioButton
+        android:id="@+id/friend_check"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/friend_foe"
+        android:textAlignment="center"
+        android:textColor="@color/text_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_button" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/input_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/map_button"
+        app:layout_constraintTop_toBottomOf="@+id/friend_check" />
+
+    <LinearLayout
+        android:id="@+id/map_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/button_border"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:padding="0dp">
+
+        <Button
+            android:id="@+id/see_map"
+            android:layout_margin="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/button_gray"
+            android:text="@string/see_map"
+            android:textColor="@color/button_text" />
+    </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
